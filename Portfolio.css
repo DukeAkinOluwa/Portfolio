@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Poppins";
+}
+body p{
+    font-size: 15px;
+}
+/* Navbar */
+.navbar-container{
+    background-color: #f3f3f3;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+}
+.name{
+    position: absolute;
+    left: 20px;
+    top: -11px;
+}
+.navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3px;
+    color: black;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2px;
+    top: -3px;
+    z-index: 1000;
+}
+.nav-links li{
+    margin: 0 20px;
+}
+.menu-btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.active{
+    text-decoration: underline;
+}
+
+
+/* Intro */
+#Intro {
+    display: flex;
+}
+.Intro_Left{
+    display: flex;
+    width: 65%;
+    height: 80vh;
+    background-color: #4831D4;
+}
+.Intro_Left_Centre{
+    width: 75%;
+    margin: auto auto;
+    justify-content: center;
+}
+.Intro_Left .picture{
+    position: inherit;
+    width: 70%;
+    top: 10vh;
+}
+.Intro_Left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px;
+}
+.Intro_Left h2{
+    z-index: 1;
+    color: #ccf381;
+    text-align: left;
+}
+.Intro_Left p{
+    color: white;
+    text-align: left;
+}
+.Intro_Right{
+    position: relative;
+    display: flex;
+    float: right;
+    width: 35%;
+    height: 80vh;
+    background-color: #ccf381;
+    z-index: 1;
+}
+.test{
+    height: 20px;
+    background-color: red;
+}
+
+/* Skills */
+.Skills{
+    width: 75%;
+    margin: auto auto;
+    justify-content: center;
+    color: white;
+}
+
+/* Design And Engineering */
+.Design_And_Engineering{
+    width: 100%;
+    margin: auto auto;
+    color: #232B2B;
+}
+.Design_And_Engineering h2{
+    color: #4831D4;
+    margin-top: 15px;
+    margin-block: 0px;
+}
+.Engineering_And_Design{
+    width: 100%;
+    margin-top: 10px;
+}
+.Engineering_And_Design img{
+    position: inherit;
+    width: 100%;
+}
+.Design,
+.Engineering{
+    text-align: justify;
+    position: relative;
+    width: 49%;
+    float: right;
+    max-height: 400px;
+}
+.Design img,
+.Engineering img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.Design img{
+    border-radius: 10px 14px 14px 10px;
+    width: 101%;
+}
+.Engineering img{
+    border-radius: 14px 10px 10px 14px;
+}
+.Engineering{
+    float: right;
+}
+.design,
+.engineering{
+    display: flex;
+    justify-content: space-between;
+    border-width: 1px;
+    border-radius: 14px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+.design{
+    border-color: #4831D4;
+}
+.engineering{
+    border-color: #ccf381;
+}
+.Design .underline{
+    position: inherit;
+    top: -6px;
+    left: 1.4px;
+    background-color: #4831D4;
+    height: 4px;
+    width: 50px;
+}
+.Engineering .underline{
+    position: inherit;
+    top: -6px;
+    left: 1.4px;
+    background-color: #4831D4;
+    height: 4px;
+    width: 27px;
+}
+.Engineering .underline2{
+    position: inherit;
+    top: -10px;
+    left: 46px;
+    background-color: #4831D4;
+    height: 4px;
+    width: 84px;
+}
+.frame{
+    margin: auto;
+}
+
+
+/* Footer */
+footer{
+    background-color: #504e4e;
+    height: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+
+/* Contact */
+.links{
+    display: flex;
+    margin: auto auto;
+    width: 40%;
+    justify-content: space-between;
+}
+.fa{
+    color: #f3f3f3;
+}
+
+
+/* Others */
+.PC_Hidden{
+    display: none;
+    position: inherit;
+}
+
+@media (max-width: 549px){
+    p{
+        font-size: 13px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar-container{
+        background-color: #f3f3f3;
+        height: 45px;
+        align-items: center;
+        top: 0;
+    }
+    .nav-links{
+        display: inline-flex;
+        top: 0;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        color: white;
+        background: #4831D4;
+        margin-top: -900px;
+        transition: all 1s ease;
+        border-bottom-left-radius: 30%;
+    }
+    .menu-btn{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        height: 26px;
+        width: 34px;
+        cursor: pointer;
+        display: block;
+        z-index: 1000;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .name{
+        position: absolute;
+        top: -13.5px;
+    }
+
+    #Intro {
+        display: inline-block;
+    }
+    #Intro img{
+        margin-top: 30px;
+    }
+    .Intro_Left{
+        width: 100%;
+        height: auto;
+    }
+    .Intro_Right{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #ccf381;
+    }
+
+    .Design,
+    .Engineering{
+        width: 100%;
+    }
+    .Line1{
+        background-color: #ccf381;
+        width: 100%;
+        height: 1px;
+    }
+    .Line2{
+        background-color: #4831D4;
+        width: 100%;
+        height: 1px;
+        margin-top: 10px;
+    }
+    .design,
+    .engineering{
+    border-width: 0px;
+    border-radius: 0%;
+    }
+
+
+    /* Skills */
+    .Skills{
+        width: 75%;
+        margin: auto auto;
+        justify-content: center;
+    }
+
+    .Phone_Hidden{
+        display: none;
+    }
+
+    /* Others */
+    .PC_Hidden{
+        display: block;
+        position: inherit;
+    }
+}
+
+
+@media (max-width: 750px) and (min-width: 550px){
+    .Intro_Left{
+        height: 60vh;
+    }
+    .Intro_Right{
+        height: 60vh;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+    .navbar-container{
+        background-color: #f3f3f3;
+        height: 45px;
+        align-items: center;
+        top: 0;
+    }
+    .nav-links{
+        display: inline-flex;
+        top: 0;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        color: white;
+        background: #4831D4;
+        margin-top: -1200px;
+        transition: all 1s ease;
+        border-bottom-left-radius: 30%;
+    }
+    .menu-btn{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        height: 26px;
+        width: 34px;
+        cursor: pointer;
+        display: block;
+        z-index: 1000;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .name{
+        position: absolute;
+        top: -14px;
+    }
+}

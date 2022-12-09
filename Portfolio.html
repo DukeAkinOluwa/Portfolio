@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=UTF-8">
+        <title>AkinOluwa</title>
+        <link rel="stylesheet" href="Portfolio.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <h1 class="name">AKINOLUWA</h1>
+                <ul class="nav-links">
+                    <li class="active"><a href="#"></a>Home</li>
+                    <li><a href="#"></a>Contact</li>
+                </ul>
+                <img src="./Images/Menu_Button.png" alt="" class="menu-btn">
+            </nav>
+        </div>
+        <div id="Intro">
+            <div class="Intro_Left">
+                <div class="Intro_Left_Centre">
+                    <div class="picture">
+                        <img src="./Images/My_Pic.jpg" alt="Developers Photo">
+                    </div>
+                    <h2>Frontend Developer</h2>
+                    <p>I like to craft solid and scalable frontend products with great user experiences.</p>
+                </div>
+            </div>
+            <div class="Intro_Right">
+                <div class="Skills">
+                    <div class="Skill1">
+                        <p>Highly skilled at creating responsive webpages using html, css and a bit of javascript</p>
+                    </div>
+                    <div class="Skill2">
+                        <p>Over three years of learning and practicing to code</p>
+                    </div>
+                    <div class="Skill3">
+                        <p>Currently working on a group project with a few intermediate web developers with more experience than I have.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Design_And_Engineering">
+            <div class="Line2"></div>
+            <div class="design">
+                <div class="Design frame">
+                    <h2>Design</h2>
+                    <div class="underline"></div>
+                    <p>I&#39m probably not the typical designer positioned behind an illustrator artboard adjusting pixels&#44 but I design&#46 Immersed in stylesheet tweaking font sizes and contemplating layouts is where you&#39d find me&#46 I&#39m commited to ceating fluent user experiences while staying fashionable &#128513&#46</p>
+                </div>
+                <div class="Design Phone_Hidden">
+                    <img src="./Images/Design.jpg" alt="">
+                </div>
+            </div>
+            <div class="Line1"></div>
+            <div class="Engineering_And_Design PC_Hidden">
+                <img src="./Images/Engineerind_And_Design.jpg" alt="">
+            </div>
+            <div class="Line1 PC_Hidden" style="margin-top: 3px;"></div>
+            <div class="engineering">
+                <div class="Engineering Phone_Hidden">
+                    <img src="./Images/Engineering.jpg" alt="">
+                </div>
+                <div class="Engineering frame">
+                    <h2 style="color: #BDF131;">Engineering</h2>
+                    <div class="underline" style="background-color: #BDF131;"></div>
+                    <div class="underline2" style="background-color: #BDF131;"></div>
+                    <p>In building web apps&#44 I&#39m equipped with just the right tools&#44 and can absolutely function both independently and as part of a group of programmers to deliver fast and satisfactory services to clients&#46</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <h2>Contact</h2>
+            <div class="links">
+                <a href="https://github.com/DukeAkinOluwa"><i class="fa fa-github"></i></a>
+                <a href="mailto:akindukoakinoluwa@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://wa.me/+2347084266913"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/akinoluwa-akinduko-1398521ba"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script> 
+    </body>
+</html>
