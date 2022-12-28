@@ -67,6 +67,7 @@ body p{
     width: 65%;
     height: 80vh;
     background-color: #4831D4;
+    max-height: 600px;
 }
 .Intro_Left_Centre{
     width: 75%;
@@ -101,6 +102,7 @@ body p{
     height: 80vh;
     background-color: #ccf381;
     z-index: 1;
+    max-height: 600px;
 }
 .test{
     height: 20px;
